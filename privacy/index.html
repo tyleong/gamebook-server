@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Gamebook Adventures</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Ember Crown light theme colours ── */
+    :root {
+      --ink:     #f3ede0;
+      --deep:    #fbf6ec;
+      --panel:   #fbf6ec;
+      --panel2:  #f4ecdc;
+      --line:    #cdb98f;
+      --sea:     #d8c9a8;
+      --text:    #221a12;
+      --muted:   #5c5341;
+      --faint:   #857a63;
+      --accent:  #9a5f1c;
+      --accent-strong: #7a4a14;
+      --ember:   #b9772a;
+    }
+
+    body {
+      font-family: 'Spectral', Georgia, serif;
+      background: var(--ink);
+      color: var(--text);
+      line-height: 1.75;
+      padding: 0 16px 60px;
+    }
+    .wrap { max-width: 740px; margin: 0 auto; }
+
+    /* ── Header ── */
+    header {
+      text-align: center;
+      padding: 48px 0 32px;
+      border-bottom: 2px solid var(--line);
+      margin-bottom: 36px;
+    }
+    header .app-name {
+      font-family: 'Cinzel', serif;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .2em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--accent-strong);
+      margin: 0 0 12px;
+      letter-spacing: .06em;
+    }
+    header .meta {
+      font-size: 13px;
+      color: var(--faint);
+      font-style: italic;
+    }
+
+    /* ── Ornament ── */
+    .orn {
+      display: block;
+      width: 80px;
+      height: 2px;
+      margin: 14px auto 0;
+      background: linear-gradient(90deg, transparent, var(--ember), transparent);
+    }
+
+    /* ── Intro ── */
+    .intro {
+      background: var(--panel2);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* ── Sections ── */
+    section { margin-bottom: 32px; }
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--sea);
+    }
+    .section-head .icon { font-size: 20px; }
+    .section-head h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    p { margin-bottom: 12px; color: var(--text); font-size: 15px; }
+    p:last-child { margin-bottom: 0; }
+    a { color: var(--ember); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 20px; color: var(--text); margin-bottom: 12px; font-size: 15px; }
+    ul li { margin-bottom: 8px; }
+    strong { color: var(--accent-strong); }
+    em { color: var(--muted); }
+
+    /* ── Table ── */
+    .table-wrap { overflow-x: auto; margin: 16px 0; border-radius: 10px; border: 1px solid var(--line); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th {
+      background: var(--panel2);
+      color: var(--accent);
+      text-align: left;
+      padding: 10px 14px;
+      font-family: 'Cinzel', serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--line);
+    }
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--sea);
+      vertical-align: top;
+      color: var(--text);
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: var(--panel2); }
+
+    /* ── Highlight box ── */
+    .highlight {
+      background: var(--panel2);
+      border-left: 3px solid var(--ember);
+      border-radius: 0 8px 8px 0;
+      padding: 12px 18px;
+      margin: 14px 0;
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    /* ── Contact ── */
+    .contact-box {
+      background: var(--panel2);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 28px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .contact-box .star {
+      font-family: 'Cinzel', serif;
+      color: var(--ember);
+      font-size: 16px;
+      letter-spacing: .3em;
+    }
+    .contact-box h2 {
+      font-family: 'Cinzel', serif;
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin: 12px 0 14px;
+    }
+    .contact-box p { color: var(--muted); margin-bottom: 6px; font-size: 15px; }
+    .contact-box a { color: var(--ember); }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--sea);
+      font-size: 12px;
+      color: var(--faint);
+      font-family: 'Cinzel', serif;
+      letter-spacing: .06em;
+    }
+
+    hr { border: none; border-top: 1px solid var(--sea); margin: 28px 0; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="app-name">⚔️ Gamebook Adventures</div>
+    <h1>✦ Privacy Policy ✦</h1>
+    <div class="meta">Effective date: 7 June 2026 · Version 1.0</div>
+    <span class="orn"></span>
+  </header>
+
+  <div class="intro">
+    <em>Ember Crown</em> (and future titles in the <strong>Gamebook Adventures</strong> series) are
+    interactive fiction games published for Android. This Privacy Policy explains what information
+    is collected, how it is used, and your rights. We are committed to keeping your experience
+    private and secure.
+  </div>
+
+  <hr>
+
+  <!-- Section 1 -->
+  <section>
+    <div class="section-head"><span class="icon">📋</span><h2>1. Information We Collect</h2></div>
+    <p>
+      Gamebook Adventures titles are <strong>text-based games with no account, login, or profile
+      required</strong>. We do not ask for your name, date of birth, or any personal details to play.
+    </p>
+    <p>The only data collected is through third-party services embedded in the app:</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Data Collected</th>
+            <th>Purpose</th>
+            <th>Shared With</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Google AdMob</strong></td>
+            <td>Advertising ID, device info, IP address</td>
+            <td>Show ads (free version)</td>
+            <td>Google</td>
+          </tr>
+          <tr>
+            <td><strong>Google Play Billing</strong></td>
+            <td>Purchase receipt</td>
+            <td>Verify in-app purchase (remove ads)</td>
+            <td>Google</td>
+          </tr>
+          <tr>
+            <td><strong>Google Play Console</strong></td>
+            <td>Crash reports, app version</td>
+            <td>App stability monitoring</td>
+            <td>Google</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="highlight">
+      Game progress (endings found, choices made) is stored <strong>on your device only</strong>
+      using browser localStorage. It is never transmitted to us or any server.
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section>
+    <div class="section-head"><span class="icon">🎮</span><h2>2. How We Use Your Information</h2></div>
+    <ul>
+      <li>
+        <strong>Ads</strong> — If you use the free version, AdMob may serve personalised or
+        non-personalised ads based on your device's advertising settings. You can opt out in
+        your device settings under <em>Google → Ads → Opt out of Ads Personalisation</em>.
+      </li>
+      <li>
+        <strong>In-app purchase</strong> — If you purchase "Remove Ads", Google Play processes
+        the transaction. We receive only a confirmation token to unlock the ad-free experience.
+        No payment details are ever visible to us.
+      </li>
+      <li>
+        <strong>Crash data</strong> — Google Play Console automatically collects crash reports
+        to help us fix bugs. This data is anonymised and aggregated.
+      </li>
+    </ul>
+    <p>We do <strong>not</strong> use any data for profiling, marketing, or any purpose beyond operating the app.</p>
+  </section>
+
+  <!-- Section 3 -->
+  <section>
+    <div class="section-head"><span class="icon">🔒</span><h2>3. Data Sharing &amp; Third Parties</h2></div>
+    <p>We do not sell, rent, or share your data with any third parties for marketing purposes.</p>
+    <p>The third-party services involved are:</p>
+    <ul>
+      <li><strong>Google AdMob</strong> — advertising. <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> applies.</li>
+      <li><strong>Google Play</strong> — app distribution and billing. <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> applies.</li>
+    </ul>
+    <p>We operate no backend server. No data is sent to us directly.</p>
+  </section>
+
+  <!-- Section 4 -->
+  <section>
+    <div class="section-head"><span class="icon">🗓️</span><h2>4. Data Retention &amp; Deletion</h2></div>
+    <p>Game progress stored on your device can be deleted at any time by:</p>
+    <ul>
+      <li>Clearing the app's data: <em>Settings → Apps → Ember Crown → Clear Data</em>, or</li>
+      <li>Uninstalling the app.</li>
+    </ul>
+    <p>We do not retain any personal data on our own servers because we do not operate any servers for this app.</p>
+  </section>
+
+  <!-- Section 5 -->
+  <section>
+    <div class="section-head"><span class="icon">👶</span><h2>5. Children's Privacy</h2></div>
+    <p>
+      Gamebook Adventures titles are rated for users aged <strong>12 and above</strong>. We do not
+      knowingly collect personal information from children under 13. If you believe a child under 13
+      is using the app and you have concerns, please contact us using the details below.
+    </p>
+  </section>
+
+  <!-- Section 6 -->
+  <section>
+    <div class="section-head"><span class="icon">🛡️</span><h2>6. Security</h2></div>
+    <ul>
+      <li>All game progress data is stored locally on your device.</li>
+      <li>Ad serving and billing use Google's infrastructure with industry-standard encryption.</li>
+      <li>We do not operate servers that store your personal information.</li>
+    </ul>
+  </section>
+
+  <!-- Section 7 -->
+  <section>
+    <div class="section-head"><span class="icon">⚖️</span><h2>7. Your Rights</h2></div>
+    <p>Depending on your location, you may have rights regarding your personal data, including the right to access, correct, or delete it.</p>
+    <ul>
+      <li>For data stored on your device, you can exercise these rights directly by clearing app data or uninstalling.</li>
+      <li>For data held by Google, please refer to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> and your Google account settings.</li>
+    </ul>
+  </section>
+
+  <!-- Section 8 -->
+  <section>
+    <div class="section-head"><span class="icon">📝</span><h2>8. Changes to This Policy</h2></div>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, we will update the effective
+      date at the top of this page. Continued use of the app after changes constitutes your
+      acceptance of the updated policy.
+    </p>
+    <p>
+      This policy covers all titles published under the <strong>Gamebook Adventures</strong> series
+      by the same developer.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <div class="contact-box">
+    <div class="star">✦ ✦ ✦</div>
+    <h2>Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please reach out:</p>
+    <p><a href="mailto:genfun79@gmail.com">genfun79@gmail.com</a></p>
+  </div>
+
+  <footer>
+    © 2026 Gamebook Adventures · All rights reserved
+  </footer>
+
+</div>
+</body>
+</html>
